@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagarajan | Software Engineer</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0f172a;
+  --card: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.1);
+  --text: #ffffff;
+  --muted: #94a3b8;
+  --gradient: linear-gradient(135deg, #6366f1, #06b6d4, #10b981);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Gradient Glow */
+body::before {
+  content:"";
+  position:fixed;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(99,102,241,0.4) 0%, transparent 70%);
+  top:-200px;
+  right:-200px;
+  z-index:-1;
+}
+
+/* Navbar */
+.navbar {
+  background: transparent !important;
+}
+
+.navbar-brand {
+  font-weight:700;
+  background: var(--gradient);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.nav-link {
+  color: var(--muted) !important;
+  font-weight:500;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+/* Hero */
+.hero {
+  padding:120px 0;
+}
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width:650px;
+}
+
+/* Buttons */
+.btn-gradient {
+  background: var(--gradient);
+  color:white;
+  border:none;
+}
+
+.btn-outline-light-custom {
+  border:1px solid var(--border);
+  color:white;
+}
+
+.btn-gradient:hover,
+.btn-outline-light-custom:hover {
+  transform:translateY(-3px);
+  transition:0.3s;
+}
+
+/* Sections */
+.section {
+  padding:100px 0;
+}
+
+/* Cards */
+.custom-card {
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  backdrop-filter: blur(10px);
+  padding:30px;
+  transition:0.3s;
+  height:100%;
+}
+
+.custom-card:hover {
+  transform:translateY(-6px);
+  border-color:#6366f1;
+}
+
+.text-muted-custom {
+  color: var(--muted);
+}
+
+/* Footer */
+footer {
+  border-top:1px solid var(--border);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#">Nagarajan</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="container text-center text-lg-start">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold mb-4">
+          Software Engineer building
+          <span class="gradient-text">scalable full-stack systems</span>
+        </h1>
+        <p class="lead mb-4">
+          I design and develop high-performance web applications using modern frontend frameworks,
+          cloud-native backend architectures, and scalable infrastructure.
+        </p>
+
+        <a href="#projects" class="btn btn-gradient px-4 py-2 me-3">View Projects</a>
+        <a href="#" class="btn btn-outline-light-custom px-4 py-2">Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="mb-5 fw-bold">Experience</h2>
+
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <h5 class="fw-semibold">Software Engineer</h5>
+        <p class="text-muted-custom">2025 — Present</p>
+        <p class="text-muted-custom">
+          Architecting scalable applications using React, Node.js, and AWS.
+          Improved API performance by 35% and reduced frontend load time by 40%.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h5 class="fw-semibold">Full-Stack Developer</h5>
+        <p class="text-muted-custom">2023 — 2025</p>
+        <p class="text-muted-custom">
+          Built SaaS platforms with authentication, payment integrations,
+          and CI/CD pipelines using Docker and cloud infrastructure.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2 class="mb-5 fw-bold">Projects</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <h5 class="fw-semibold">Neural Network Visualization</h5>
+          <p class="text-muted-custom">
+            WebGL-based visualization engine optimized for 60fps real-time rendering.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <h5 class="fw-semibold">Vault Protocol</h5>
+          <p class="text-muted-custom">
+            Secure identity system using Go and zero-knowledge proofs.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="custom-card">
+          <h5 class="fw-semibold">Cloud SaaS Platform</h5>
+          <p class="text-muted-custom">
+            Full-stack SaaS app with REST APIs, PostgreSQL, AWS deployment.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Let’s Work Together</h2>
+    <p class="text-muted-custom mb-4">
+      Open to full-time software engineering roles and impactful full-stack projects.
+    </p>
+    <a href="mailto:your@email.com" class="btn btn-gradient px-4 py-2">Contact Me</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 text-center text-muted-custom">
+  © 2026 Nagarajan · Software Engineer
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
