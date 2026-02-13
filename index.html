@@ -14,7 +14,6 @@
   --card: rgba(255,255,255,0.05);
   --border: rgba(255,255,255,0.1);
   --text: #ffffff;
-  --muted: #94a3b8;
   --accent: #6366f1;
   --gradient: linear-gradient(135deg,#6366f1,#06b6d4);
 }
@@ -38,7 +37,7 @@ body {
 }
 
 .nav-link {
-  color: var(--muted) !important;
+  color: #cbd5e1 !important;
 }
 
 .nav-link:hover {
@@ -72,11 +71,14 @@ body {
   padding: 100px 0;
 }
 
-/* Paragraph Hover Effect */
+/* Paragraph Styling - Brighter */
 p {
-  color: var(--muted);
+  color: #cbd5e1;
   transition: all 0.3s ease;
   cursor: default;
+  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 p:hover {
@@ -128,7 +130,14 @@ p:hover {
 /* Footer */
 footer {
   border-top: 1px solid var(--border);
-  color: var(--muted);
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero {
+    padding: 120px 0 100px 0;
+  }
 }
 </style>
 </head>
